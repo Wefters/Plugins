@@ -1,0 +1,36 @@
+[submodule "Biometric"]
+	path = Biometric
+	url = https://github.com/Wefters/Biometric.git
+[submodule "Browser"]
+	path = Browser
+	url = https://github.com/Wefters/Browser.git
+[submodule "Clipboard"]
+	path = Clipboard
+	url = https://github.com/Wefters/Clipboard.git
+[submodule "Device"]
+	path = Device
+	url = https://github.com/Wefters/Device.git
+[submodule "Dialog"]
+	path = Dialog
+	url = https://github.com/Wefters/Dialog.git
+[submodule "FlashLight"]
+	path = FlashLight
+	url = https://github.com/Wefters/Flashlight.git
+[submodule "Haptics"]
+	path = Haptics
+	url = https://github.com/Wefters/Haptics.git
+[submodule "Network"]
+	path = Network
+	url = https://github.com/Wefters/Network.git
+[submodule "Scanner"]
+	path = Scanner
+	url = https://github.com/Wefters/Scanner.git
+[submodule "Screen"]
+	path = Screen
+	url = https://github.com/Wefters/Screen.git
+[submodule "SecureStorage"]
+	path = SecureStorage
+	url = https://github.com/Wefters/SecureStorage.git
+[submodule "Share"]
+	path = Share
+	url = https://github.com/Wefters/Share.git
