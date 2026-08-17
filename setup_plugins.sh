@@ -32,6 +32,7 @@ declare -A PLUGINS=(
     ["Screen"]="Screen.git"
     ["SecureStorage"]="SecureStorage.git"
     ["Share"]="Share.git"
+    ["ErrorTest"]="ErrorTest.git"
 )
 
 process_repo() {

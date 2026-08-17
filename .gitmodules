@@ -34,3 +34,6 @@
 [submodule "Share"]
 	path = Share
 	url = https://github.com/Wefters/Share.git
+[submodule "ErrorTest"]
+	path = Share
+	url = https://github.com/Wefters/ErrorTest.git
