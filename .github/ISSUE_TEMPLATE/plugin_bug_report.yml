@@ -1,0 +1,106 @@
+name: Plugin bug report
+description: Report a bug or native failure in an official Wefter plugin.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please search existing issues in this repository and the specific plugin repository before filing a report.
+  - type: dropdown
+    id: plugin
+    attributes:
+      label: Affected plugin
+      description: Select which official plugin has the issue.
+      options:
+        - "App (@wefterjs/app)"
+        - "Biometric (@wefterjs/biometric)"
+        - "Browser (@wefterjs/browser)"
+        - "Clipboard (@wefterjs/clipboard)"
+        - "Device (@wefterjs/device)"
+        - "Dialog (@wefterjs/dialog)"
+        - "ErrorTest (@wefterjs/error-test)"
+        - "FlashLight (@wefterjs/flash-light)"
+        - "Haptics (@wefterjs/haptics)"
+        - "Network (@wefterjs/network)"
+        - "Scanner (@wefterjs/scanner)"
+        - "Screen (@wefterjs/screen)"
+        - "SecureStorage (@wefterjs/secure-storage)"
+        - "Share (@wefterjs/share)"
+        - "Storage (@wefterjs/storage)"
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Target platform
+      description: On which platform does the issue occur?
+      options:
+        - "Both Android and iOS"
+        - "Android only"
+        - "iOS only"
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Device and OS version
+      description: What device or simulator model and operating system version are you testing on?
+      placeholder: "e.g. Pixel 7 (Android 14) / iPhone 15 (iOS 17.2) / Android Emulator API 34"
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug description
+      description: Explain the problem and unexpected behavior.
+      placeholder: Describe the problem clearly.
+    validations:
+      required: true
+  - type: textarea
+    id: code
+    attributes:
+      label: Invocation code snippet
+      description: Provide the JavaScript or TypeScript code used to call the plugin.
+      render: typescript
+      placeholder: |
+        import { Scanner } from "@wefterjs/scanner";
+
+        await Scanner.scan({ formats: ["qr"] });
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Describe the steps required to reproduce the issue.
+      placeholder: |
+        1. Call plugin method
+        2. Perform device action
+        3. Observe failure
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What did you expect to happen?
+      placeholder: Describe the expected outcome.
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Native stack traces or console output
+      description: Paste any error messages, logcat output, or Xcode console logs.
+      render: shell
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Verification
+      options:
+        - label: I verified that required permissions are granted on the device.
+          required: true
+        - label: I searched existing issues and verified this has not been reported already.
+          required: true
+

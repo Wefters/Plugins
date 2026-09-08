@@ -1,0 +1,58 @@
+name: New plugin proposal
+description: Propose a new official device capability plugin for Wefter.
+title: "[Plugin Proposal]: "
+labels: ["new-plugin", "enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        We welcome proposals for new device plugins. Please describe the hardware capability or native API you would like to expose.
+  - type: input
+    id: name
+    attributes:
+      label: Suggested plugin name
+      description: Proposed plugin identifier and npm package name.
+      placeholder: "e.g. nfc (@wefterjs/nfc) or contacts (@wefterjs/contacts)"
+    validations:
+      required: true
+  - type: textarea
+    id: capability
+    attributes:
+      label: Device capability and use cases
+      description: What device hardware or operating system feature does this plugin provide?
+      placeholder: Explain the primary use cases and why applications need this native capability.
+    validations:
+      required: true
+  - type: textarea
+    id: api
+    attributes:
+      label: Proposed TypeScript API
+      description: Outline the intended JavaScript or TypeScript interface and methods.
+      render: typescript
+      placeholder: |
+        export interface NfcReadResult {
+          payload: string;
+        }
+
+        export const Nfc = {
+          read(): Promise<NfcReadResult>;
+        };
+    validations:
+      required: true
+  - type: textarea
+    id: android
+    attributes:
+      label: Android implementation details
+      description: Mention relevant Android APIs, Jetpack libraries, or permissions needed.
+      placeholder: "e.g. android.nfc.NfcAdapter, uses-permission android.permission.NFC"
+    validations:
+      required: true
+  - type: textarea
+    id: ios
+    attributes:
+      label: iOS implementation details
+      description: Mention relevant Apple frameworks (e.g. CoreNFC) and Info.plist privacy descriptions.
+      placeholder: "e.g. CoreNFC framework, NFCReaderUsageDescription"
+    validations:
+      required: true
+
