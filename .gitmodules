@@ -37,3 +37,9 @@
 [submodule "ErrorTest"]
 	path = ErrorTest
 	url = https://github.com/Wefters/ErrorTest.git
+[submodule "Storage"]
+	path = Storage
+	url = https://github.com/Wefters/Storage.git
+[submodule "App"]
+	path = App
+	url = https://github.com/Wefters/App.git

@@ -20,6 +20,7 @@ git submodule update --init --recursive
 remote_url="https://github.com/Wefter"
 
 declare -A PLUGINS=(
+    ["App"]="App.git"
     ["Biometric"]="Biometric.git"
     ["Browser"]="Browser.git"
     ["Clipboard"]="Clipboard.git"
@@ -32,6 +33,7 @@ declare -A PLUGINS=(
     ["Screen"]="Screen.git"
     ["SecureStorage"]="SecureStorage.git"
     ["Share"]="Share.git"
+    ["Storage"]="Storage.git"
     ["ErrorTest"]="ErrorTest.git"
 )
 
