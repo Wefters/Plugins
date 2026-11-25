@@ -17,7 +17,7 @@ git submodule sync
 echo "==> Initializing and cloning all plugin submodules..."
 git submodule update --init --recursive
 
-remote_url="https://github.com/Wefter"
+remote_url="git@github.com:Wefters/"
 
 declare -A PLUGINS=(
     ["App"]="App.git"
@@ -94,7 +94,7 @@ process_repo() {
 }
 
 # Process root Plugins repo
-process_repo "Root Plugins Repo" "." "https://github.com/Wefter/Plugins.git"
+process_repo "Root Plugins Repo" "." "git@github.com:Wefters/Plugins.git"
 
 # Process all submodules
 for PLUGIN in "${!PLUGINS[@]}"; do
