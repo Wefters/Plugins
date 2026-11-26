@@ -33,4 +33,3 @@ Describe the testing performed:
 - [ ] TypeScript compiles cleanly with `pnpm build`.
 - [ ] Unit tests pass with `pnpm test`.
 - [ ] `wefter plugin validate` reports zero validation errors.
-

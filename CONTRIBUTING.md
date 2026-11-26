@@ -74,4 +74,3 @@ To propose and create a new official plugin:
 ## License
 
 All official plugins are released under the [MIT License](LICENSE).
-

@@ -103,4 +103,3 @@ body:
           required: true
         - label: I searched existing issues and verified this has not been reported already.
           required: true
-

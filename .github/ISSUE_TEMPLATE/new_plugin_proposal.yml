@@ -55,4 +55,3 @@ body:
       placeholder: "e.g. CoreNFC framework, NFCReaderUsageDescription"
     validations:
       required: true
-
